@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: ReithSans, Arial, Helvetica, freesans, sans-serif;
+  }
+  .nav {
+    width: 1280px;
+    margin: 0 auto;
+  }
+  #nav-bottom {
+    width: 1280px;
+    margin: 0 auto;
+  }
+  #signin {
+    font-family: ReithSans, Arial, Helvetica, freesans, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    padding: 13px 50px 13px 15px;
+    float: left;
+  }
+  .navtop {
+    font-family: ReithSans, Arial, Helvetica, freesans, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    border-right: 1px solid #cccccc;
+    padding: 13px 20px;
+    float: left;
+  }
+  #bbc-image {
+    padding-top: 7px;
+    padding-right: 15px;
+    width: 90px;
+    float: left;
+  }
+  #user-image {
+    padding-right: 5px;
+    margin-top: -5px;
+    width: 25px;
+    float: left;
+  }
+  #arrow-image {
+    padding-left: 50px;
+  }
+  #search {
+    border-style: none;
+    padding: 5px;
+    margin: 8px 0px 8px 8px;
+    width: 150px;
+    background-color: #e4e4e4;
+    font-family: ReithSans, Arial, Helvetica, freesans, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    float: left;
+  }
+  #search-image {
+    width: 25px;
+    margin-top: 7px;
+  }
+  #nav-bottom {
+    background-color: #bb1919;
+    width: 100%;
+    margin: 5px 0px;
+    padding-bottom: 10px;
+  }
+  #header {
+    font-family: ReithSans, Arial, Helvetica, freesans, sans-serif;
+    padding-top: 10px;
+    font-size: 40px;
+    color: white;
+    margin: 0px 0px 10px;
+  }
+  .second {
+    color: white;
+
+    font-family: ReithSans, Arial, Helvetica, freesans, sans-serif;
+
+    font-size: 13px;
+    border-right: 1px solid #cc5151;
+    padding: 0px 10px;
+  }
+  .home {
+    color: white;
+
+    font-family: ReithSans, Arial, Helvetica, freesans, sans-serif;
+
+    font-size: 13px;
+    border-right: 1px solid #cc5151;
+    padding-right: 10px;
+  }
+
+  #arrow-bottom-image {
+    padding-left: 5px;
+    width: 10px;
+  }
+  #science {
+    font-family: ReithSans, Arial, Helvetica, freesans, sans-serif;
+    border-bottom: 3px solid red;
+    font-size: 20px;
+  }
+  .science {
+    margin-bottom: 20px;
+  }
+  #delaying-image {
+    width: 470px;
+  }
+  .left-section {
+    width: 471px;
+    float: left;
+    margin-right: 8px;
+  }
+  .right-section {
+    width: 250px;
+    margin: 0px 8px 30px;
+    float: left;
+  }
+  .image-right {
+    width: 250px;
+  }
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  div a:hover {
+    color: #1380a1;
+    text-decoration: underline;
+  }
+  #hour {
+    width: 20px;
+  }
+  .hour {
+    padding: 2px 3px;
+    border-right: 1px solid gray;
+    color: #73645f;
+    font-size: 15px;
+  }
+  #comment-image {
+    width: 12px;
+  }
+  p {
+    color: #73645f;
+  }
+  #right-div {
+    float: right;
+  }

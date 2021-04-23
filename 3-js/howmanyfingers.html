@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>howmanyfingers</title>
+    <style>
+        #enteredNum{
+            margin-top: 100px;
+            margin-left: 100px;
+        }
+        #parag-msg{
+            margin-top: 20px;
+            margin-left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <input id="enteredNum" type="text">
+    <button id="clicked-button">Guess Finger!</button>
+    <p id="parag-msg"></p>
+    <script>
+        
+        document.getElementById("clicked-button").onclick = function(){
+            var myNumber = document.getElementById("enteredNum").value;
+        var randomNum = Math.random()*5+1;
+        var fingers = Math.floor(randomNum);
+        if(myNumber==fingers){
+            document.getElementById("parag-msg").innerHTML="congratulations, you got it! The number is " + fingers
+        } else{document.getElementById("parag-msg").innerHTML="sorry, you missed it! The number is " + fingers + " try again"}
+        return myNumber=null;
+    }
+    </script>
+</body>
+</html>

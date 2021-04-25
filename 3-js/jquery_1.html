@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery codes</title>
+    <style type="text/css">
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #square-left, #square-right{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(5, 21, 53);
+            margin: 20px;
+            float: left;
+        }
+        #square-text1, #square-text2, #circle-text {
+            color: white;
+            text-align: center;
+            margin-top: 90px;
+            display: none;
+        }
+        #circle{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(4, 75, 8);
+            border-radius: 50%;
+            margin: 20px;
+            float: left;    
+        }
+        #parag{
+            clear: both;
+            font-weight: bold;
+            color: red;
+        }
+        #cite-link{
+            width: 700px;
+            height: 300px;
+            border-color: black;
+        }
+        #change-cite{
+            color: white;
+            background-color: green;
+            font-weight: bold;
+        }
+        
+    </style>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+</head>
+<body>
+    <h1>Here are some jquery works</h1>
+    <div id="square-left"><p id="square-text1">You are on the first square</p></div>
+    <div id="circle"><p id="circle-text">You are on the circle</p></div>
+    <div id="square-right"><p id="square-text2">You are on the second square</p></div>
+    <p id="parag">This is <span id="cite-name"> https://www.fullhdfilmizlesene.com</span></p>
+    <iframe id="cite-link" src="https://www.fullhdfilmizlesene.com"></iframe>
+    <button id="change-cite">Change iframe!</button>
+    <script type="text/javascript">
+
+        $("#square-left").hover(function () {
+            $("#square-text1").css ("display", "block")});
+            $("#square-left").mouseleave(function () {
+                $("#square-text1").css ("display", "none")});
+
+        $("#square-right").hover(function () {
+            $("#square-text2").css ("display", "block")});
+            $("#square-right").mouseleave(function () {
+                $("#square-text2").css ("display", "none")});
+
+        $("#circle").hover(function(){
+            $("#circle-text").show() 
+        });
+            $("#circle").mouseleave(function(){
+                $("#circle-text").hide() 
+        });
+
+        $("#change-cite").click(function(){
+            $("iframe").attr("src", "https://www.daserste.de/information/wissen-kultur/ttt/videos/index.html")
+        })
+        $("#change-cite").click(function(){
+            $("#cite-name").html("https://www.daserste.de/information/wissen-kultur/ttt/videos/index.html")
+        })
+
+    </script>
+</body>
+</html>

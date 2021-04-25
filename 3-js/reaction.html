@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reaction Test</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #area{
+            width: 1000px;
+            height: 600px;
+        }
+            
+    </style>
+</head>
+<body>
+    <h1>Test Your Reactions!</h1>
+    <p>Click on the boxes and circles as quickly as you can!</p>
+    <p><strong>Your time:<span id="reaction-time"></span></strong></p>
+    <div id="area">
+        
+        <div id="play-ground"></div>
+        
+    </div>
+    <script>
+        
+        var start =new Date().getTime();
+        
+        function makeSquare(){
+        
+        var rand = Math.random();
+        var shape = document.getElementById("play-ground");
+        var long = Math.floor(rand*200)+20;
+         shape.style.width = long+"px";
+         shape.style.height = long+"px";
+         var colorR = Math.floor(Math.random()*256);
+         var colorG = Math.floor(Math.random()*256);
+         var colorB = Math.floor(Math.random()*256);
+         shape.style.backgroundColor = "rgb(" +colorR +","+colorG +"," + colorB +")";
+         
+         shape.style.marginTop = Math.floor(Math.random()*400)+"px";
+         shape.style.marginLeft = Math.floor(Math.random()*1200)+"px";
+         if (Math.random()<0.5) shape.style.borderRadius =50+"%"; 
+          else shape.style.borderRadius =0+"%";  
+          var end =new Date().getTime();
+          var totalTime = (end - start)/1000;
+          document.getElementById("reaction-time").innerHTML = totalTime+"s";
+          start = new Date().getTime();
+        };
+        makeSquare();
+                     
+        document.getElementById("play-ground").onclick = makeSquare;
+      
+  
+        
+        
+       
+        
+    </script>
+</body>
+</html>

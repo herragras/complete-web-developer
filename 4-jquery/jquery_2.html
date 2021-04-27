@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery code 2</title>
+
+    <style type="text/css">
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+      #circle {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: red;
+      }
+      #move-circle {
+        margin-right: 80px;
+        margin-bottom: 20px;
+        background-color: teal;
+        font-weight: bold;
+      }
+      #move-initial{
+          background-color: green;
+          color: white;
+          font-weight: bold;
+      }
+     
+    </style>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+  </head>
+  <body>
+    <h1 id="body-title">Moving circle</h1>
+    <p id="info-text">Click the button to move the circle</p>
+    <button id="move-circle">click to move</button>
+    <button id="move-initial">back to initial</button>
+    <div id="circle"> </div>
+ 
+    <script type="text/javascript">
+      $("#move-circle").click(function () {
+        var colorR = Math.floor(Math.random() * 256);
+        var colorG = Math.floor(Math.random() * 256);
+        var colorB = Math.floor(Math.random() * 256);
+        $("#circle").animate(
+          {
+            width: "400px",
+            height: "400px",
+            marginLeft: "100px",
+            marginTop: "100px",
+          },
+          2000,
+          function () {
+            $(this).css(
+              "background-color",
+              `rgb(${colorR},${colorG},${colorB})`
+            );
+          }
+        )
+      });
+      $("#move-initial").click(function () {
+        $("#circle").animate(
+          {
+            width: "100px",
+            height: "100px",
+            marginLeft: "0px",
+            marginTop: "0px",
+            borderRadius: "50%",
+          },
+          2000,
+          function () {
+            $(this).css("background-color", "red");
+          }
+        );
+      });
+    </script>
+  </body>
+</html>

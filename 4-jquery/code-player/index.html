@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Player</title>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <!-- <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script> -->
+    <script
+      src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+      integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div id="logo">CodePlayer</div>
+      <div id="buttonContainer">
+        <div id="html" class="toggleButton active">HTML</div>
+        <div id="css" class="toggleButton">CSS</div>
+        <div id="javascript" class="toggleButton">javascript</div>
+        <div id="output" class="toggleButton active">Output</div>
+      </div>
+    </div>
+
+    <div id="bodyContainer">
+      <textarea name="" id="htmlPanel" class="panel">
+<p id="paragraph">hello world</p></textarea
+      >
+      <textarea name="" id="cssPanel" class="panel hidden">
+p {color:green}</textarea
+      >
+      <textarea name="" id="javascriptPanel" class="panel hidden">
+document.getElementById("paragraph").innerHTML="Hello there"</textarea
+      >
+      <iframe id="outputPanel" class="panel"></iframe>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
